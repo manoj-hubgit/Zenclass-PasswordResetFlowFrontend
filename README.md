@@ -1,8 +1,16 @@
-# React + Vite
+Password Reset Flow Project
+This project implements a password reset flow using the MERN stack, allowing users to reset their passwords via email verification.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Forget Password: Users can request a password reset by entering their email address.
+Email Verification: An email with a password reset link is sent to the user's registered email.
+Reset Password: Users can reset their password by clicking on the emailed link and entering a new password.
 
-Currently, two official plugins are available:
+Technologies Used
+Frontend: React, React Router, Axios, React Toastify
+Backend: Node.js, Express, MongoDB, Nodemailer, JWT
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Usage
+Forget Password Page: Navigate to /forget-password.
+Email Verification: Check your email inbox for the password reset link.
+Reset Password Form: Click on the link to reset your password.
