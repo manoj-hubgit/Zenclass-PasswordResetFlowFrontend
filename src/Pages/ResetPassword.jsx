@@ -16,7 +16,7 @@ const ResetPassword = () => {
             return
         }
         try {
-            const response=await axios.post(`http://localhost:5000/api/user/reset-password/${id}/${token}`,{password})
+            const response=await axios.post(`https://zenclass-passwordresetflowbackend.onrender.com/api/user/reset-password/${id}/${token}`,{password})
             toast.success("Password reset successfully");
                 navigate("/login")
            

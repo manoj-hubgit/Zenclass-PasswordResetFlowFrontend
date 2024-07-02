@@ -14,7 +14,7 @@ const Login = ({setToken}) => {
 
     const handleSubmit= async (e)=>{
         e.preventDefault()
-        await axios.post('http://localhost:5000/api/user/login-user',payload)
+        await axios.post('https://zenclass-passwordresetflowbackend.onrender.com/api/user/login-user',payload)
         .then((res)=>{toast.success(res.data.message);
             setToken(res.data.token);
             navigate("/home")
