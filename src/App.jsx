@@ -5,6 +5,8 @@ import Register from './Pages/Register';
 import Login from './Pages/Login';
 import LandingPage from './Pages/LandingPage';
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import Navigationbar from './Components/Navigationbar';
 import ForgetPassword from './Pages/ForgetPassword';
 import ResetPassword from './Pages/ResetPassword';
@@ -24,7 +26,7 @@ const App = () => {
         <Route path='/reset-password/:id/:token' element={<ResetPassword />} />
       </Routes>
       </BrowserRouter>
-     
+     <ToastContainer/>
     </div>
   );
 };
